@@ -1,6 +1,6 @@
 # Zen Cart Currency Status Toggle
 
-Implements currency enable/disable (status) functionality for Zen Cart 1.5.7,
+Implements currency enable/disable (status) functionality for Zen Cart 1.5.4,
 following the exact Zen4All Language Status addon pattern.
 
 ## Modified files
@@ -26,5 +26,6 @@ ALTER TABLE currencies ADD COLUMN status TINYINT(1) NOT NULL DEFAULT 1;
 - Follows Zen4All Language Status pattern from `languages.php`
 - Admin listing shows ALL currencies including disabled (for easy toggling)
 - Cron exchange rate updates apply to all currencies including disabled ones
-- PHP 5.x compatible (uses `isset()` instead of `??` null coalescing)
+- Built for Zen Cart 1.5.4 on PHP 5.6
+- Uses `isset()` instead of `??` for PHP 5.6 compatibility
 - ⚠️ Default currency disable protection not yet implemented
